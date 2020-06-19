@@ -6,6 +6,9 @@
   "author": {
     "name": ""
   },
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "ws": "^7.3.0"
   }
