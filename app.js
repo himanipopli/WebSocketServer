@@ -1,5 +1,5 @@
 var SocketServer = require('ws').Server;
-var wss = new SocketServer({ port:3000 });
+var wss = new SocketServer({ port:process.env.PORT||3000 });
 wss.on('connection', function connection(ws) {
     ws.on('message', function (message) {
         console.log("Received: " + message);
