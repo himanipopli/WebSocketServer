@@ -1,5 +1,5 @@
 var SocketServer = require('ws').Server;
-var wss = new SocketServer({ port:process.env.PORT||3000 });
+var wss = new SocketServer({ port:process.env.PORT||5000 });
 wss.on('connection', function connection(ws) {
     setInterval(function () {
         ws.send("Hello");
